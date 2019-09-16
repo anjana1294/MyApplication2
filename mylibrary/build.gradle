@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.manishAppsimity'
+group='com.github.anjana1294'
 
 android {
     compileSdkVersion 28
