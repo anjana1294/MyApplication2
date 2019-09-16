@@ -1,0 +1,157 @@
+package com.directparking.app.ui.custom;
+
+import android.support.annotation.LayoutRes;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.view.View;
+import com.airbnb.epoxy.EpoxyController;
+import com.airbnb.epoxy.EpoxyModel;
+import com.airbnb.epoxy.EpoxyViewHolder;
+import com.airbnb.epoxy.GeneratedModel;
+import com.airbnb.epoxy.OnModelBoundListener;
+import com.airbnb.epoxy.OnModelClickListener;
+import com.airbnb.epoxy.OnModelUnboundListener;
+import com.airbnb.epoxy.WrappedEpoxyModelClickListener;
+import com.directparking.app.R;
+import java.lang.CharSequence;
+import java.lang.Number;
+import java.lang.Object;
+import java.lang.Override;
+import java.lang.String;
+
+/**
+ * Generated file. Do not modify! */
+public class LoadMoreModel_ extends LoadMoreModel implements GeneratedModel<LoadMoreModel.Holder>, LoadMoreModelBuilder {
+  private OnModelBoundListener<LoadMoreModel_, LoadMoreModel.Holder> onModelBoundListener_epoxyGeneratedModel;
+
+  private OnModelUnboundListener<LoadMoreModel_, LoadMoreModel.Holder> onModelUnboundListener_epoxyGeneratedModel;
+
+  public LoadMoreModel_() {
+    super();
+  }
+
+  @Override
+  public void addTo(EpoxyController controller) {
+    super.addTo(controller);
+    addWithDebugValidation(controller);
+  }
+
+  @Override
+  public void handlePreBind(final EpoxyViewHolder holder, final LoadMoreModel.Holder object,
+      int position) {
+    validateStateHasNotChangedSinceAdded("The model was changed between being added to the controller and being bound.", position);
+  }
+
+  @Override
+  public void handlePostBind(final LoadMoreModel.Holder object, int position) {
+    if (onModelBoundListener_epoxyGeneratedModel != null) {
+      onModelBoundListener_epoxyGeneratedModel.onModelBound(this, object, position);
+    }
+    validateStateHasNotChangedSinceAdded("The model was changed during the bind call.", position);
+  }
+
+  /**
+   * Register a listener that will be called when this model is bound to a view.
+   * <p>
+   * The listener will contribute to this model's hashCode state per the {@link
+   * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
+   * <p>
+   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+  public LoadMoreModel_ onBind(OnModelBoundListener<LoadMoreModel_, LoadMoreModel.Holder> listener) {
+    onMutation();
+    this.onModelBoundListener_epoxyGeneratedModel = listener;
+    return this;
+  }
+
+  @Override
+  public void unbind(LoadMoreModel.Holder object) {
+    super.unbind(object);
+    if (onModelUnboundListener_epoxyGeneratedModel != null) {
+      onModelUnboundListener_epoxyGeneratedModel.onModelUnbound(this, object);
+    }
+  }
+
+  /**
+   * Register a listener that will be called when this model is unbound from a view.
+   * <p>
+   * The listener will contribute to this model's hashCode state per the {@link
+   * com.airbnb.epoxy.EpoxyAttribute.Option#DoNotHash} rules.
+   * <p>
+   * You may clear the listener by setting a null value, or by calling {@link #reset()} */
+  public LoadMoreModel_ onUnbind(OnModelUnboundListener<LoadMoreModel_, LoadMoreModel.Holder> listener) {
+    onMutation();
+    this.onModelUnboundListener_epoxyGeneratedModel = listener;
+    return this;
+  }
+
+  public LoadMoreModel_ retry(boolean retry) {
+    onMutation();
+    super.retry = retry;
+    return this;
+  }
+
+  public boolean retry() {
+    return retry;
+  }
+
+  /**
+   * Set a click listener that will provide the parent view, model, and adapter position of the clicked view. This will clear the normal View.OnClickListener if one has been set */
+  public LoadMoreModel_ clickListener(final OnModelClickListener<LoadMoreModel_, LoadMoreModel.Holder> clickListener) {
+    onMutation();
+    if (clickListener == null) {
+      super.clickListener = null;
+    }
+    else {
+      super.clickListener = new WrappedEpoxyModelClickListener(clickListener);
+    }
+    return this;
+  }
+
+  public LoadMoreModel_ clickListener(View.OnClickListener clickListener) {
+    onMutation();
+    super.clickListener = clickListener;
+    return this;
+  }
+
+  public View.OnClickListener clickListener() {
+    return clickListener;
+  }
+
+  @Override
+  public LoadMoreModel_ id(long id) {
+    super.id(id);
+    return this;
+  }
+
+  @Override
+  public LoadMoreModel_ id(@NonNull Number... arg0) {
+    super.id(arg0);
+    return this;
+  }
+
+  @Override
+  public LoadMoreModel_ id(long id1, long id2) {
+    super.id(id1, id2);
+    return this;
+  }
+
+  @Override
+  public LoadMoreModel_ id(@NonNull CharSequence arg0) {
+    super.id(arg0);
+    return this;
+  }
+
+  @Override
+  public LoadMoreModel_ id(@NonNull CharSequence arg0, @NonNull CharSequence... arg1) {
+    super.id(arg0, arg1);
+    return this;
+  }
+
+  @Override
+  public LoadMoreModel_ id(@NonNull CharSequence arg0, long arg1) {
+    super.id(arg0, arg1);
+    return this;
+  }
+
+  @Override
+  public LoadMoreModel_ layout(@LayoutRes int a
